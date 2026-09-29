@@ -1,75 +1,398 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Jesús Plaza Image. Barbería, peluquería y masajes en Las Palmas de Gran Canaria. Descubre los servicios y reserva con la agenda integrada.">
-  <meta name="theme-color" content="#421b27">
-  <meta name="robots" content="noindex,nofollow">
-  <title>Jesús Plaza Image — Tu estilo. Tu momento.</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="app.js" defer></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#f3f2f2">
+<title>Jesús Plaza Image — Tu estilo. Tu momento.</title>
+<meta name="description" content="Barbería, peluquería y masajes en Las Palmas de Gran Canaria. Reserva en tres pasos.">
+<meta name="robots" content="noindex,nofollow">
+<script src="./support.js"></script>
 </head>
 <body>
-  <a class="skip" href="#contenido">Saltar al contenido</a>
-  <header class="header">
-    <a class="brand" href="#inicio" aria-label="Jesús Plaza Image, inicio">JESÚS PLAZA<span>IMAGE</span></a>
-    <nav aria-label="Navegación principal"><a href="#servicios">Servicios</a><a href="#jesus">El espacio</a><a href="#visitanos">Encuéntranos</a></nav>
-    <a class="button button-small" href="#reservar">Reserva tu cita <span aria-hidden="true">↗</span></a>
-  </header>
-  <main id="contenido">
-    <section class="hero" id="inicio" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="dot" aria-hidden="true"></span> LAS PALMAS DE GRAN CANARIA</p>
-        <h1 id="hero-title">Tu estilo.<br><em>Tu momento.</em></h1>
-        <p class="hero-intro">Un corte que habla de ti.<br>Una pausa que te sienta bien.</p>
-        <a class="button button-light" href="#reservar">Encuentra tu momento <span aria-hidden="true">↗</span></a>
-        <div class="hero-bottom"><span>BARBERÍA · PELUQUERÍA · MASAJES</span><a href="#servicios" aria-label="Descubrir los servicios"><span aria-hidden="true">↓</span></a></div>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/modernist-47d6abeb-0034-49cf-a0e6-1d1030d44efe/styles.css">
+<script src="_ds/modernist-47d6abeb-0034-49cf-a0e6-1d1030d44efe/_ds_bundle.js"></script>
+<style>body{margin:0;background:var(--color-bg)}a{color:var(--color-accent-700)}a:hover{color:var(--color-accent)}button{font-family:inherit}
+:root{--hdr-h:64px}
+html{-webkit-text-size-adjust:100%}
+body{-webkit-tap-highlight-color:transparent;overflow-x:hidden}
+.jp-hdr{min-height:var(--hdr-h);box-sizing:border-box}
+.jp-steps{top:var(--hdr-h) !important}
+.jp-full{min-height:calc(100svh - var(--hdr-h)) !important}
+.jp-done-h{overflow-wrap:anywhere}
+@media (max-width:640px){
+  :root{--hdr-h:56px !important}
+  .jp-hdr{padding:8px 16px !important;gap:14px !important}
+  .jp-logo{font-size:14px !important;gap:4px !important}
+  .jp-citas{white-space:nowrap !important}
+  .jp-hdr .btn{padding:9px 12px !important;font-size:13px !important}
+  .jp-hero{gap:24px !important;padding:28px 16px 32px !important}
+  .jp-hero-fig{min-height:300px !important}
+  .jp-cat{min-height:0 !important;flex-direction:row !important;align-items:center !important;gap:16px !important;padding:20px 16px !important}
+  .jp-cat-top{order:3 !important;flex:none !important}
+  .jp-cat-top > span{display:none !important}
+  .jp-cat-body{margin-top:0 !important;flex:1 !important;min-width:0 !important}
+  .jp-cat-label{font-size:30px !important}
+  .jp-visit{gap:24px !important}
+  .jp-addr{font-size:32px !important}
+  .jp-step-grid{align-content:start !important;background:var(--color-bg) !important}
+  .jp-step-head{border-bottom:2px solid var(--color-text) !important;flex-direction:row !important;align-items:flex-end !important;flex-wrap:wrap !important;gap:12px 16px !important;padding:24px 16px 20px !important}
+  .jp-step-num{font-size:64px !important}
+  .jp-step-title{font-size:30px !important;flex:1 1 180px !important}
+  .jp-summary{flex:1 0 100% !important;margin-top:4px !important}
+  .jp-summary > div{padding:8px 0 !important;font-size:14px !important}
+  .jp-step-body{padding:24px 16px 0 !important}
+  .jp-svc{grid-template-columns:minmax(0,1fr) auto !important;grid-template-areas:"n p" "d p" !important;row-gap:2px !important;padding:16px 12px !important}
+  .jp-svc > span:nth-child(1){grid-area:n !important;font-size:19px !important}
+  .jp-svc > span:nth-child(2){grid-area:d !important}
+  .jp-svc > span:nth-child(3){grid-area:p !important;align-self:center !important;font-size:20px !important}
+  .jp-days{display:flex !important;overflow-x:auto !important;scroll-snap-type:x mandatory !important;margin:0 -16px !important;padding:0 16px !important;border-left:0 !important;border-top:0 !important;scrollbar-width:none !important}
+  .jp-days::-webkit-scrollbar{display:none !important}
+  .jp-days > button{flex:0 0 72px !important;scroll-snap-align:start !important;border:1px solid var(--color-divider) !important;border-top:2px solid var(--color-text) !important;margin-right:-1px !important}
+  .jp-slots{grid-template-columns:repeat(4,1fr) !important}
+  .jp-slots > button{padding:14px 0 !important;text-align:center !important}
+  .jp-cta{position:sticky !important;bottom:0 !important;z-index:5 !important;margin:auto -16px 0 !important;width:calc(100% + 32px) !important;max-width:none !important;padding:16px !important;padding-bottom:calc(16px + env(safe-area-inset-bottom)) !important;background:var(--color-bg) !important}
+  .jp-cta > .btn{width:100% !important}
+  .jp-done{gap:24px !important;padding:28px 16px calc(28px + env(safe-area-inset-bottom)) !important}
+  .jp-done-h{font-size:clamp(44px,14vw,64px) !important}
+  .jp-done-facts > div{padding:12px 0 0 !important}
+  .jp-actions > *{flex:1 1 100% !important;min-width:0 !important}
+  .jp-booking-actions > *{flex:1 !important}
+  .jp-citas-sec{gap:24px !important}
+  .dialog-backdrop{place-items:end stretch !important;padding:0 !important}
+  .dialog{width:100% !important;padding-bottom:calc(24px + env(safe-area-inset-bottom)) !important}
+}
+@media (max-width:380px){
+  .jp-hdr{gap:10px !important}
+  .jp-logo{font-size:13px !important;flex-direction:column !important;align-items:flex-start !important;gap:0 !important;line-height:1.1 !important}
+  .jp-hdr .btn{padding:8px 10px !important}
+}
+@media (hover:none){.jp-cat:hover{background:var(--color-bg) !important;color:inherit !important}}
+</style>
+</helmet>
+<div style="min-height:100svh;background:var(--color-bg);color:var(--color-text);font-family:var(--font-body)">
+
+<header class="jp-hdr" style="position:sticky;top:0;z-index:10;background:var(--color-bg);display:flex;align-items:center;gap:clamp(12px,3vw,24px);padding:12px clamp(16px,4vw,48px);border-bottom:2px solid var(--color-text)">
+  <button class="jp-logo" onClick="{{ goHome }}" style="all:unset;cursor:pointer;display:flex;gap:6px;align-items:baseline;margin-right:auto;font-size:clamp(14px,3.6vw,17px);letter-spacing:0.02em;white-space:nowrap">
+    <span style="font-weight:800">JESÚS PLAZA</span><span style="font-weight:400">IMAGE</span>
+  </button>
+  <button class="jp-citas" onClick="{{ goCitas }}" style="all:unset;cursor:pointer;font-size:14px;font-weight:600;display:flex;gap:6px;align-items:center" style-hover="color:var(--color-accent)">Mis citas<sc-if value="{{ hasBookings }}" hint-placeholder-val="{{ false }}"><span style="background:var(--color-accent);color:var(--color-bg);font-size:11px;font-weight:800;padding:1px 6px">{{ bookingCount }}</span></sc-if></button>
+  <button class="btn btn-primary" onClick="{{ startFlow }}" style="padding:10px 16px">Reservar</button>
+</header>
+
+<sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
+  <section data-screen-label="01 Portada" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:2px;background:var(--color-text);border-bottom:2px solid var(--color-text)">
+    <div class="jp-hero" style="container-type:inline-size;min-width:0;background:var(--color-bg);display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-8);padding:clamp(24px,5vw,64px) clamp(16px,4vw,48px)">
+      <div style="font-size:12px;letter-spacing:0.12em;font-weight:600">BARBERÍA · PELUQUERÍA · MASAJES</div>
+      <h1 style="margin:0;font-size:clamp(48px,17cqi,152px);line-height:0.88;letter-spacing:-0.045em;font-weight:800">Tu estilo.<br><span style="color:var(--color-accent)">Tu momento.</span></h1>
+      <div style="display:flex;flex-direction:column;gap:var(--space-4);max-width:420px">
+        <p style="margin:0;font-size:clamp(17px,2vw,20px);line-height:1.4;text-wrap:pretty">Un corte que habla de ti, o una pausa que te sienta bien.</p>
+        <button class="btn btn-primary" onClick="{{ startFlow }}" style="justify-content:space-between;padding:18px 20px;font-size:17px;width:100%">Reservar cita<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M5 12h14"></path><path d="m13 5 7 7-7 7"></path></svg></button>
+        <div style="display:flex;justify-content:space-between;gap:12px;font-size:14px"><span style="color:var(--color-neutral-700)">3 pasos · menos de un minuto</span><button onClick="{{ goCitas }}" style="all:unset;cursor:pointer;font-weight:600;text-decoration:underline;text-underline-offset:3px" style-hover="color:var(--color-accent)">Ya tengo cita</button></div>
       </div>
-      <figure class="hero-photo"><img src="assets/corte.jpg" width="1080" height="720" alt="Jesús trabajando el peinado de una clienta en su salón" fetchpriority="high"><figcaption><span>EL DETALLE CAMBIA TODO.</span><span>Jesús Plaza Image</span></figcaption></figure>
-    </section>
-    <div class="intro-strip"><p>Buen estilo.<br><em>Trato cercano.</em></p><span>De Venezuela a Las Palmas.<br>Una forma personal de cuidar tu imagen.</span><a class="text-link" href="https://www.instagram.com/jesusplazaimage/" target="_blank" rel="noopener noreferrer">Conoce a Jesús en Instagram <span aria-hidden="true">↗</span></a></div>
-    <section class="services section" id="servicios" aria-labelledby="services-title">
-      <div class="section-heading"><div><p class="eyebrow">01 / ELIGE CÓMO CUIDARTE</p><h2 id="services-title">Lo tuyo,<br><em>con intención.</em></h2></div><p>Un nuevo look. Tu corte de siempre.<br>O tiempo para desconectar.</p></div>
-      <div class="filters" role="group" aria-label="Filtrar servicios"><button type="button" data-filter="barberia" aria-pressed="true">Barbería</button><button type="button" data-filter="peluqueria" aria-pressed="false">Peluquería</button><button type="button" data-filter="masajes" aria-pressed="false">Masajes</button></div>
-      <p id="filter-status" class="sr-only" aria-live="polite"></p>
-      <div class="service-group" data-category="barberia" aria-label="Servicios de barbería">
-        <a class="service" href="#reservar"><div><h3>Corte de hombre</h3><p>60 min</p></div><span class="price">15 € <span aria-hidden="true">↗</span></span></a>
-        <a class="service" href="#reservar"><div><h3>Arreglo de barba</h3><p>35 min</p></div><span class="price">13 € <span aria-hidden="true">↗</span></span></a>
-        <a class="service" href="#reservar"><div><h3>Corte + repaso de barba</h3><p>95 min</p></div><span class="price">25 € <span aria-hidden="true">↗</span></span></a>
-        <a class="service" href="#reservar"><div><h3>Corte infantil</h3><p>60 min</p></div><span class="price">14 € <span aria-hidden="true">↗</span></span></a>
+    </div>
+    <figure class="jp-hero-fig" style="margin:0;position:relative;min-height:clamp(340px,70vw,640px);background:var(--color-surface);display:flex;flex-direction:column">
+      <div class="grayscale" style="flex:1;position:relative"><img src="assets/corte.jpg" alt="Jesús peinando a una clienta en su salón" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
+      <figcaption style="margin:0;display:flex;justify-content:space-between;gap:12px;padding:12px clamp(16px,2vw,24px);background:var(--color-text);color:var(--color-bg);font-size:12px;letter-spacing:0.1em;font-weight:600"><span>EL DETALLE CAMBIA TODO</span><span>LAS PALMAS DE G.C.</span></figcaption>
+    </figure>
+  </section>
+
+  <section data-screen-label="02 Categorías" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:2px;background:var(--color-text);border-bottom:2px solid var(--color-text)">
+    <sc-for list="{{ cats }}" as="c" hint-placeholder-count="3">
+      <button class="jp-cat" onClick="{{ c.pick }}" style="all:unset;cursor:pointer;display:flex;flex-direction:column;gap:var(--space-8);padding:clamp(24px,3vw,40px) clamp(16px,4vw,48px);background:var(--color-bg);min-height:clamp(160px,22vw,220px)" style-hover="background:var(--color-text);color:var(--color-bg)">
+        <span class="jp-cat-top" style="display:flex;justify-content:space-between;align-items:center;font-size:13px;font-weight:600;letter-spacing:0.08em"><span>{{ c.num }}</span><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M7 17 17 7"></path><path d="M8 7h9v9"></path></svg></span>
+        <span class="jp-cat-body" style="display:flex;flex-direction:column;gap:6px;margin-top:auto">
+          <span class="jp-cat-label" style="font-size:clamp(32px,3.4vw,48px);font-weight:800;letter-spacing:-0.03em;line-height:1">{{ c.label }}</span>
+          <span style="font-size:15px;display:flex;justify-content:space-between;gap:12px"><span>{{ c.count }}</span><span style="font-weight:600">{{ c.from }}</span></span>
+        </span>
+      </button>
+    </sc-for>
+  </section>
+
+  <section data-screen-label="03 Visítanos" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr))">
+    <figure class="grayscale" style="margin:0;position:relative;min-height:clamp(260px,50vw,480px);background:var(--color-surface)">
+      <img src="assets/salon.jpg" alt="Sillón y zona de trabajo del salón" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
+    </figure>
+    <div class="jp-visit" style="background:var(--color-accent);color:var(--color-bg);display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-8);padding:clamp(24px,5vw,64px) clamp(16px,4vw,48px)">
+      <div style="font-size:12px;letter-spacing:0.12em;font-weight:600">TE ESPERAMOS</div>
+      <div class="jp-addr" style="font-size:clamp(36px,4.4vw,64px);font-weight:800;line-height:0.95;letter-spacing:-0.035em">C. José Franchy Roca, 35<br>Las Palmas</div>
+      <div style="display:flex;flex-wrap:wrap;gap:var(--space-6);font-size:16px;font-weight:600">
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Jos%C3%A9+Franchy+Roca+35+35007+Las+Palmas+de+Gran+Canaria" target="_blank" rel="noopener" style="color:var(--color-bg)">Cómo llegar ↗</a>
+        <a href="https://www.instagram.com/jesusplazaimage/" target="_blank" rel="noopener" style="color:var(--color-bg)">@jesusplazaimage ↗</a>
       </div>
-      <div class="service-group" data-category="peluqueria" aria-label="Servicios de peluquería">
-        <a class="service" href="#reservar"><div><h3>Corte de mujer</h3><p>60 min</p></div><span class="price">27 € <span aria-hidden="true">↗</span></span></a>
-        <a class="service" href="#reservar"><div><h3>Peinado</h3><p>60 min</p></div><span class="price">22 € <span aria-hidden="true">↗</span></span></a>
-        <a class="service" href="#reservar"><div><h3>Tinte en raíz</h3><p>80 min</p></div><span class="price">38 € <span aria-hidden="true">↗</span></span></a>
-        <a class="service" href="#reservar"><div><h3>Coloración</h3><p>90 min</p></div><span class="price">52 € <span aria-hidden="true">↗</span></span></a>
-        <a class="service" href="#reservar"><div><h3>Reflejos</h3><p>120 min</p></div><span class="price">75 € <span aria-hidden="true">↗</span></span></a>
+    </div>
+  </section>
+</sc-if>
+
+<sc-if value="{{ isFlow }}" hint-placeholder-val="{{ false }}">
+  <section class="jp-full" data-screen-label="04 Reserva" style="min-height:calc(100vh - 70px);display:flex;flex-direction:column">
+    <div class="jp-steps" style="display:grid;grid-template-columns:auto repeat(3,minmax(0,1fr));border-bottom:2px solid var(--color-text);position:sticky;top:62px;z-index:9;background:var(--color-bg)">
+      <button onClick="{{ back }}" aria-label="Atrás" style="all:unset;cursor:pointer;display:grid;place-items:center;width:64px;border-right:2px solid var(--color-text)" style-hover="background:var(--color-text);color:var(--color-bg)"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M19 12H5"></path><path d="m11 19-7-7 7-7"></path></svg></button>
+      <sc-for list="{{ progress }}" as="p" hint-placeholder-count="3">
+        <div style="display:flex;flex-direction:column;gap:4px;min-width:0;padding:12px clamp(8px,2vw,16px);border-top:6px solid {{ p.bar }};opacity:{{ p.op }}">
+          <span style="font-size:11px;letter-spacing:0.1em;font-weight:600">{{ p.n }}</span>
+          <span style="font-size:clamp(12px,3.2vw,14px);font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">{{ p.label }}</span>
+        </div>
+      </sc-for>
+    </div>
+
+    <div class="jp-step-grid" style="flex:1;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,380px),1fr));gap:2px;background:var(--color-text)">
+      <div class="jp-step-head" style="min-width:0;background:var(--color-bg);padding:clamp(24px,4vw,56px) clamp(16px,4vw,48px);display:flex;flex-direction:column;gap:var(--space-6)">
+        <div class="jp-step-num" style="font-size:clamp(72px,12vw,180px);font-weight:800;line-height:0.8;letter-spacing:-0.06em;color:var(--color-accent)">{{ stepNum }}</div>
+        <h2 class="jp-step-title" style="margin:0;font-size:clamp(36px,4.4vw,60px);line-height:0.98;letter-spacing:-0.035em">{{ stepTitle }}</h2>
+        <sc-if value="{{ hasSummary }}" hint-placeholder-val="{{ false }}">
+          <div class="jp-summary" style="margin-top:auto;display:flex;flex-direction:column;border-top:2px solid var(--color-text)">
+            <sc-for list="{{ summary }}" as="s" hint-placeholder-count="2">
+              <div style="display:flex;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--color-divider);font-size:15px"><span style="color:var(--color-neutral-700)">{{ s.k }}</span><span style="font-weight:600;text-align:right">{{ s.v }}</span></div>
+            </sc-for>
+          </div>
+        </sc-if>
       </div>
-      <div class="service-group" data-category="masajes" aria-label="Servicios de masaje">
-        <a class="service" href="#reservar"><div><h3>Masaje antiestrés</h3><p>30 min</p></div><span class="price">45 € <span aria-hidden="true">↗</span></span></a>
-        <a class="service" href="#reservar"><div><h3>Espalda, cuello y hombros</h3><p>30 min</p></div><span class="price">45 € <span aria-hidden="true">↗</span></span></a>
-        <a class="service" href="#reservar"><div><h3>Cuerpo completo</h3><p>90 min</p></div><span class="price">70 € <span aria-hidden="true">↗</span></span></a>
+
+      <div class="jp-step-body" style="min-width:0;background:var(--color-bg);padding:clamp(24px,4vw,56px) clamp(16px,4vw,48px);display:flex;flex-direction:column;gap:var(--space-6)">
+        <sc-if value="{{ isStep1 }}" hint-placeholder-val="{{ false }}">
+          <div class="seg" style="align-self:stretch;display:grid;grid-template-columns:repeat(3,1fr);border:2px solid var(--color-text)">
+            <sc-for list="{{ cats }}" as="c" hint-placeholder-count="3">
+              <button onClick="{{ c.tab }}" style="all:unset;cursor:pointer;padding:12px clamp(8px,2vw,16px);font-size:14px;font-weight:600;background:{{ c.tabBg }};color:{{ c.tabFg }}">{{ c.label }}</button>
+            </sc-for>
+          </div>
+          <div style="display:flex;flex-direction:column;border-top:2px solid var(--color-text)">
+            <sc-for list="{{ services }}" as="s" hint-placeholder-count="4">
+              <button class="jp-svc" onClick="{{ s.pick }}" style="all:unset;cursor:pointer;display:grid;grid-template-columns:minmax(0,1fr) auto auto;align-items:baseline;gap:var(--space-4);padding:20px 12px;margin:0 -12px;border-bottom:1px solid var(--color-divider);background:{{ s.bg }}" style-hover="background:var(--color-accent-100)">
+                <span style="font-size:clamp(19px,1.8vw,24px);font-weight:600;letter-spacing:-0.01em">{{ s.name }}</span>
+                <span style="font-size:14px;color:var(--color-neutral-700)">{{ s.dur }}</span>
+                <span style="font-size:clamp(19px,1.8vw,24px);font-weight:800;min-width:56px;text-align:right">{{ s.priceLabel }}</span>
+              </button>
+            </sc-for>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ isStep2Proto }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;flex-direction:column;gap:var(--space-3)">
+            <div style="font-size:12px;letter-spacing:0.1em;font-weight:600">DÍA</div>
+            <div class="jp-days" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(68px,1fr));border-top:2px solid var(--color-text);border-left:1px solid var(--color-divider)">
+              <sc-for list="{{ days }}" as="d" hint-placeholder-count="12">
+                <button onClick="{{ d.pick }}" style="all:unset;cursor:pointer;display:flex;flex-direction:column;gap:2px;padding:10px;border-right:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider);background:{{ d.bg }};color:{{ d.fg }}">
+                  <span style="font-size:11px;letter-spacing:0.08em;font-weight:600">{{ d.wd }}</span>
+                  <span style="font-size:26px;font-weight:800;line-height:1">{{ d.num }}</span>
+                  <span style="font-size:11px">{{ d.mo }}</span>
+                </button>
+              </sc-for>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:var(--space-3)">
+            <div style="font-size:12px;letter-spacing:0.1em;font-weight:600">HORA</div>
+            <div class="jp-slots" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));border-top:2px solid var(--color-text);border-left:1px solid var(--color-divider)">
+              <sc-for list="{{ slots }}" as="t" hint-placeholder-count="12">
+                <button onClick="{{ t.pick }}" disabled="{{ t.off }}" style="all:unset;cursor:{{ t.cursor }};padding:14px 10px;font-size:16px;font-weight:600;border-right:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider);background:{{ t.bg }};color:{{ t.fg }};text-decoration:{{ t.deco }}">{{ t.time }}</button>
+              </sc-for>
+            </div>
+            <p style="margin:0;font-size:12px;color:var(--color-neutral-700)">Horarios de ejemplo. En la web publicada salen de la agenda real de Jesús.</p>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ isStep2Tw }}" hint-placeholder-val="{{ false }}">
+          <iframe src="https://widget.treatwell.es/establecimiento/jesus-plaza-image/" title="Agenda de Jesús Plaza Image" style="width:100%;min-height:620px;border:2px solid var(--color-text);background:var(--color-surface)"></iframe>
+          <a href="https://widget.treatwell.es/establecimiento/jesus-plaza-image/" target="_blank" rel="noopener" style="font-size:14px">¿No carga? Ábrela en otra pestaña ↗</a>
+        </sc-if>
+
+        <sc-if value="{{ isStep3 }}" hint-placeholder-val="{{ false }}">
+          <div style="display:flex;flex-direction:column;gap:var(--space-4);max-width:460px">
+            <div class="field"><label style="font-size:13px">Tu nombre</label><input class="input" autocomplete="name" autocapitalize="words" enterkeyhint="next" value="{{ name }}" onChange="{{ onName }}" placeholder="Nombre" style="min-height:52px;font-size:18px;border:0;border-bottom:2px solid var(--color-text);background:transparent;padding:8px 0"></div>
+            <div class="field"><label style="font-size:13px">Teléfono, por si hay que avisarte</label><input class="input" type="tel" inputmode="tel" autocomplete="tel" enterkeyhint="done" value="{{ phone }}" onChange="{{ onPhone }}" placeholder="600 000 000" style="min-height:52px;font-size:18px;border:0;border-bottom:2px solid var(--color-text);background:transparent;padding:8px 0"></div>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{ showContinue }}" hint-placeholder-val="{{ false }}">
+          <div class="jp-cta" style="margin-top:auto;width:100%;max-width:460px">
+          <button class="btn btn-primary" onClick="{{ next }}" disabled="{{ cantContinue }}" style="justify-content:space-between;padding:18px 20px;font-size:17px;width:100%">{{ continueLabel }}<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M5 12h14"></path><path d="m13 5 7 7-7 7"></path></svg></button>
+          </div>
+        </sc-if>
       </div>
-      <p class="service-note">Precios consultados el 29/09/2026. Confirma el servicio, precio y disponibilidad en la agenda al reservar.</p>
-    </section>
-    <section class="story" id="jesus" aria-labelledby="story-title">
-      <figure><img src="assets/salon.jpg" width="1080" height="720" loading="lazy" alt="Sillón y zona de trabajo del salón Jesús Plaza Image"><figcaption>JESÚS PLAZA IMAGE / LAS PALMAS</figcaption></figure>
-      <div class="story-copy"><p class="eyebrow">02 / MÁS QUE UN CAMBIO DE LOOK</p><h2 id="story-title">Aquí vienes<br>a ser <em>tú.</em></h2><p>Atención personalizada, desde el primer momento. Para dar forma a tu estilo o regalarte una pausa.</p><a class="text-link" href="#reservar">Hazte un hueco <span aria-hidden="true">↗</span></a><div class="detail-line"><span>IMAGEN</span><span>CUIDADO</span><span>BIENESTAR</span></div></div>
-    </section>
-    <section class="booking section" id="reservar" aria-labelledby="booking-title">
-      <div class="section-heading"><div><p class="eyebrow">03 / UN MOMENTO PARA TI</p><h2 id="booking-title">Tu próxima cita.<br><em>Aquí mismo.</em></h2></div><p>Elige servicio, día y hora<br>en la agenda de Jesús.</p></div>
-      <div class="booking-shell">
-        <div class="booking-top"><span>JESÚS PLAZA IMAGE</span><span>Reservas con Treatwell</span></div>
-        <div class="booking-consent" id="booking-consent"><span class="calendar-mark" aria-hidden="true">↗</span><h3>Tu cuidado empieza con una cita.</h3><p>Abre la agenda para consultar servicios y horarios disponibles sin salir de esta página.</p><button class="button" type="button" id="load-booking">Abrir agenda de reservas <span aria-hidden="true">↗</span></button><p class="privacy-note">Al abrirla conectarás con Treatwell, que gestiona la reserva y sus cookies. <a href="https://www.treatwell.es/info/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacidad de Treatwell</a>.</p></div>
-        <div id="booking-frame-container" hidden><p id="booking-status" role="status">Cargando la agenda…</p><iframe id="booking-frame" title="Reservar cita con Jesús Plaza Image mediante Treatwell" data-src="https://widget.treatwell.es/establecimiento/jesus-plaza-image/" referrerpolicy="strict-origin-when-cross-origin"></iframe><button class="close-booking" id="close-booking" type="button">Cerrar agenda integrada</button></div>
-        <div class="booking-backup">¿La agenda no carga en tu navegador? <a href="https://widget.treatwell.es/establecimiento/jesus-plaza-image/" target="_blank" rel="noopener noreferrer">Abrir en otra pestaña <span aria-hidden="true">↗</span></a></div>
+    </div>
+  </section>
+</sc-if>
+
+<sc-if value="{{ isDone }}" hint-placeholder-val="{{ false }}">
+  <section class="jp-full jp-done" data-screen-label="05 Confirmada" style="min-height:calc(100vh - 70px);background:var(--color-accent);color:var(--color-bg);display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-8);padding:clamp(24px,5vw,64px) clamp(16px,4vw,48px)">
+    <div style="font-size:12px;letter-spacing:0.12em;font-weight:600">CITA CONFIRMADA</div>
+    <div style="display:flex;flex-direction:column;gap:var(--space-6)">
+      <h1 class="jp-done-h" style="margin:0;font-size:clamp(64px,10vw,152px);line-height:0.88;letter-spacing:-0.045em">Listo, {{ doneName }}.<br>Te esperamos.</h1>
+      <div class="jp-done-facts" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));border-top:2px solid var(--color-bg)">
+        <sc-for list="{{ doneFacts }}" as="f" hint-placeholder-count="3">
+          <div style="display:flex;flex-direction:column;gap:4px;padding:16px 16px 0 0"><span style="font-size:12px;letter-spacing:0.1em;font-weight:600">{{ f.k }}</span><span style="font-size:clamp(20px,2vw,28px);font-weight:800;letter-spacing:-0.02em">{{ f.v }}</span></div>
+        </sc-for>
       </div>
-      <p class="booking-note">La cita queda confirmada cuando completes el proceso y recibas la confirmación de Treatwell. Los cambios y cancelaciones se gestionan desde esa confirmación.</p>
-      <noscript><p>Para reservar sin JavaScript, <a href="https://widget.treatwell.es/establecimiento/jesus-plaza-image/">abre la agenda de Jesús Plaza Image</a>.</p></noscript>
-    </section>
-    <section class="visit" id="visitanos" aria-labelledby="visit-title"><div><p class="eyebrow">04 / NOS VEMOS EN LAS PALMAS</p><h2 id="visit-title">Cerca de ti.<br><em>Lejos del ruido.</em></h2></div><div class="visit-info"><address>C. José Franchy Roca, 35<br>35007 Las Palmas de Gran Canaria</address><p>Consulta los horarios disponibles en la agenda.</p><a class="button button-light" href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Jos%C3%A9+Franchy+Roca+35+35007+Las+Palmas+de+Gran+Canaria" target="_blank" rel="noopener noreferrer">Cómo llegar <span aria-hidden="true">↗</span></a><a class="text-link" href="https://www.instagram.com/jesusplazaimage/" target="_blank" rel="noopener noreferrer">@jesusplazaimage <span aria-hidden="true">↗</span></a></div></section>
-  </main>
-  <footer><a class="brand" href="#inicio">JESÚS PLAZA<span>IMAGE</span></a><p>Tu estilo. Tu momento.</p><details><summary>Privacidad y reservas</summary><p>Esta versión local no recoge datos mediante formularios propios ni carga la agenda externa hasta que pulses «Abrir agenda». La reserva y los datos que introduzcas en ella los gestiona Treatwell conforme a sus políticas. La información legal del titular debe completarse antes de publicar.</p></details><span class="preview-label">PROPUESTA LOCAL · NO PUBLICADA</span></footer>
+    </div>
+    <div class="jp-actions" style="display:flex;flex-wrap:wrap;gap:var(--space-3)">
+      <a href="{{ icsHref }}" download="cita-jesus-plaza.ics" class="btn" style="background:var(--color-bg);color:var(--color-text);padding:16px 20px;font-size:16px;justify-content:flex-start;min-width:240px">Añadir al calendario</a>
+      <button class="btn" onClick="{{ goCitas }}" style="border:2px solid var(--color-bg);color:var(--color-bg);padding:16px 20px;font-size:16px;justify-content:flex-start;min-width:240px" style-hover="background:var(--color-accent-600)">Ver mis citas</button>
+    </div>
+  </section>
+</sc-if>
+
+<sc-if value="{{ isCitas }}" hint-placeholder-val="{{ false }}">
+  <section class="jp-citas-sec" data-screen-label="06 Mis citas" style="padding:clamp(24px,5vw,64px) clamp(16px,4vw,48px);display:flex;flex-direction:column;gap:var(--space-8)">
+    <h1 style="margin:0;font-size:clamp(56px,8vw,120px);line-height:0.9;letter-spacing:-0.045em">Tus citas</h1>
+    <sc-if value="{{ noBookings }}" hint-placeholder-val="{{ false }}">
+      <div style="border-top:2px solid var(--color-text);padding-top:var(--space-6);display:flex;flex-direction:column;gap:var(--space-4);align-items:flex-start">
+        <p style="margin:0;font-size:19px">Aún no tienes nada reservado.</p>
+        <button class="btn btn-primary" onClick="{{ startFlow }}" style="padding:16px 20px;font-size:16px;min-width:240px;justify-content:flex-start">Reservar cita</button>
+      </div>
+    </sc-if>
+    <div style="display:flex;flex-direction:column;border-top:2px solid var(--color-text)">
+      <sc-for list="{{ bookingRows }}" as="b" hint-placeholder-count="0">
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,200px),1fr));gap:var(--space-4);align-items:center;padding:var(--space-6) 0;border-bottom:2px solid var(--color-text)">
+          <div style="display:flex;gap:var(--space-3);align-items:baseline"><span style="font-size:64px;font-weight:800;line-height:0.9;letter-spacing:-0.04em">{{ b.num }}</span><span style="display:flex;flex-direction:column;font-size:14px;font-weight:600"><span>{{ b.wd }}</span><span>{{ b.mo }}</span></span></div>
+          <div style="display:flex;flex-direction:column;gap:2px"><span style="font-size:22px;font-weight:600">{{ b.time }} · {{ b.svc }}</span><span style="font-size:14px;color:var(--color-neutral-700)">{{ b.meta }}</span></div>
+          <div class="jp-booking-actions" style="display:flex;gap:var(--space-2);justify-content:flex-start;flex-wrap:wrap">
+            <button class="btn btn-secondary" onClick="{{ b.change }}" style="border:2px solid var(--color-text);padding:12px 16px;min-width:120px;justify-content:flex-start">Cambiar</button>
+            <button class="btn btn-ghost" onClick="{{ b.cancel }}" style="padding:12px 16px;color:var(--color-accent-700)">Cancelar</button>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+  </section>
+</sc-if>
+
+<sc-if value="{{ showDialog }}" hint-placeholder-val="{{ false }}">
+  <div class="dialog-backdrop" onClick="{{ closeDialog }}">
+    <div class="dialog" onClick="{{ stop }}" style="background:var(--color-bg);border-top:6px solid var(--color-accent);padding:var(--space-6)">
+      <div class="dialog-title" style="font-size:28px;letter-spacing:-0.02em">¿Cancelar esta cita?</div>
+      <div class="dialog-body" style="font-size:16px">{{ dialogText }} El hueco queda libre para otra persona.</div>
+      <div style="display:flex;gap:var(--space-2);flex-wrap:wrap">
+        <button class="btn btn-secondary" onClick="{{ closeDialog }}" style="border:2px solid var(--color-text);padding:12px 16px;flex:1;justify-content:flex-start">Mantenerla</button>
+        <button class="btn btn-primary" onClick="{{ confirmCancel }}" style="padding:12px 16px;flex:1;justify-content:flex-start">Sí, cancelar</button>
+      </div>
+    </div>
+  </div>
+</sc-if>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;agendaMode&quot;:{&quot;editor&quot;:&quot;enum&quot;,&quot;options&quot;:[&quot;Prototipo&quot;,&quot;Treatwell&quot;],&quot;default&quot;:&quot;Prototipo&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Reserva&quot;},&quot;showPrices&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Reserva&quot;}}">
+const SERVICES = {
+  barberia: [['Corte de hombre',60,15],['Arreglo de barba',35,13],['Corte + repaso de barba',95,25],['Corte infantil',60,14]],
+  peluqueria: [['Corte de mujer',60,27],['Peinado',60,22],['Tinte en raíz',80,38],['Coloración',90,52],['Reflejos',120,75]],
+  masajes: [['Masaje antiestrés',30,45],['Espalda, cuello y hombros',30,45],['Cuerpo completo',90,70]]
+};
+const CATS = [['barberia','Barbería'],['peluqueria','Peluquería'],['masajes','Masajes']];
+const WD = ['DOM','LUN','MAR','MIÉ','JUE','VIE','SÁB'];
+const WDL = ['domingo','lunes','martes','miércoles','jueves','viernes','sábado'];
+const MO = ['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+const KEY = 'jpi-citas';
+const iso = d => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`;
+const parse = s => { const [y,m,d] = s.split('-').map(Number); return new Date(y,m-1,d); };
+const dur = m => m >= 60 ? `${Math.floor(m/60)} h${m%60 ? ' ' + m%60 : ''}` : `${m} min`;
+const svcById = id => { const [c,i] = id.split(':'); const s = SERVICES[c][+i]; return { id, cat:c, name:s[0], min:s[1], price:s[2] }; };
+
+class Component extends DCLogic {
+  state = { screen:'home', step:1, cat:'barberia', svc:null, day:null, slot:null, name:'', phone:'', bookings:[], editing:null, cancelId:null };
+  componentDidMount() {
+    try { this.setState({ bookings: JSON.parse(localStorage.getItem(KEY) || '[]') }); } catch (e) {}
+  }
+  componentDidUpdate() {
+    const k = this.state.screen + ':' + this.state.step;
+    if (this._view && this._view !== k) { try { window.scrollTo(0, 0); } catch (e) {} }
+    this._view = k;
+  }
+  save(bookings) { this.setState({ bookings }); try { localStorage.setItem(KEY, JSON.stringify(bookings)); } catch (e) {} }
+  days() {
+    const out = []; const d = new Date(); d.setHours(0,0,0,0);
+    for (let i = 0; out.length < 12 && i < 30; i++) { const x = new Date(d); x.setDate(d.getDate()+i); if (x.getDay() !== 0) out.push(x); }
+    return out;
+  }
+  slots(day) {
+    if (!day) return [];
+    const dt = parse(day), now = new Date(), isToday = iso(now) === day, out = [];
+    for (let h = 10; h < 20; h++) for (const m of [0,30]) {
+      const t = `${h}:${m ? '30' : '00'}`, seed = (dt.getDate()*37 + h*11 + m + dt.getMonth()*7) % 5;
+      const past = isToday && (h*60+m) <= now.getHours()*60+now.getMinutes();
+      out.push({ time:t, off: seed === 0 || seed === 3 || past });
+    }
+    return out;
+  }
+  fmtDay(day, long) { const d = parse(day); return long ? `${WDL[d.getDay()]} ${d.getDate()} ${MO[d.getMonth()]}` : `${WD[d.getDay()]} ${d.getDate()} ${MO[d.getMonth()]}`; }
+  ics(b) {
+    if (!b) return '#';
+    const s = svcById(b.svc), [h,m] = b.time.split(':').map(Number), d = parse(b.day);
+    const st = new Date(d.getFullYear(), d.getMonth(), d.getDate(), h, m), en = new Date(st.getTime() + s.min*60000);
+    const f = x => `${iso(x).replace(/-/g,'')}T${String(x.getHours()).padStart(2,'0')}${String(x.getMinutes()).padStart(2,'0')}00`;
+    const txt = ['BEGIN:VCALENDAR','VERSION:2.0','BEGIN:VEVENT',`DTSTART:${f(st)}`,`DTEND:${f(en)}`,`SUMMARY:${s.name} · Jesús Plaza Image`,'LOCATION:C. José Franchy Roca\\, 35\\, 35007 Las Palmas de Gran Canaria','END:VEVENT','END:VCALENDAR'].join('\r\n');
+    return 'data:text/calendar;charset=utf-8,' + encodeURIComponent(txt);
+  }
+  renderVals() {
+    const S = this.state, tw = this.props.agendaMode === 'Treatwell', showPrices = this.props.showPrices ?? true;
+    const svc = S.svc ? svcById(S.svc) : null;
+    const start = (cat) => this.setState({ screen:'flow', step:1, cat: cat || S.cat, svc:null, day:null, slot:null, editing:null });
+    const cats = CATS.map(([id,label],i) => {
+      const list = SERVICES[id], active = S.cat === id;
+      return { id, label, num:`0${i+1}`, count:`${list.length} servicios`, from: showPrices ? `desde ${Math.min(...list.map(s=>s[2]))} €` : '',
+        pick: () => start(id), tab: () => this.setState({ cat:id }),
+        tabBg: active ? 'var(--color-text)' : 'transparent', tabFg: active ? 'var(--color-bg)' : 'var(--color-text)' };
+    });
+    const services = SERVICES[S.cat].map((s,i) => {
+      const id = `${S.cat}:${i}`, sel = S.svc === id;
+      return { name:s[0], dur:dur(s[1]), priceLabel: showPrices ? `${s[2]} €` : '', bg: sel ? 'var(--color-accent-100)' : 'transparent',
+        pick: () => this.setState({ svc:id, step:2 }) };
+    });
+    const days = this.days().map(d => {
+      const k = iso(d), sel = S.day === k;
+      return { wd:WD[d.getDay()], num:d.getDate(), mo:MO[d.getMonth()], bg: sel ? 'var(--color-accent)' : 'transparent', fg: sel ? 'var(--color-bg)' : 'var(--color-text)', pick: () => this.setState({ day:k, slot:null }) };
+    });
+    const slots = this.slots(S.day).map(t => {
+      const sel = S.slot === t.time;
+      return { time:t.time, off:t.off, cursor: t.off ? 'default' : 'pointer', deco: t.off ? 'line-through' : 'none',
+        bg: sel ? 'var(--color-accent)' : 'transparent', fg: sel ? 'var(--color-bg)' : (t.off ? 'var(--color-neutral-400)' : 'var(--color-text)'),
+        pick: () => !t.off && this.setState({ slot:t.time }) };
+    });
+    const labels = ['Servicio','Día y hora','Tus datos'];
+    const progress = labels.map((label,i) => ({ label, n:`0${i+1}`, bar: i+1 <= S.step ? 'var(--color-accent)' : 'var(--color-neutral-300)', op: i+1 <= S.step ? 1 : 0.5 }));
+    const titles = ['¿Qué te apetece hoy?', '¿Cuándo te viene bien?', '¿A nombre de quién?'];
+    const summary = [];
+    if (svc && S.step > 1) summary.push({ k:'Servicio', v:`${svc.name}${showPrices ? ' · ' + svc.price + ' €' : ''}` }, { k:'Duración', v:dur(svc.min) });
+    if (S.day && S.slot && S.step > 2) summary.push({ k:'Cuándo', v:`${this.fmtDay(S.day,true)} · ${S.slot}` });
+    const cantContinue = S.step === 2 ? !(S.day && S.slot) : S.step === 3 ? !(S.name.trim() && S.phone.trim().length >= 6) : true;
+    const confirm = () => {
+      const b = { id: S.editing || String(Date.now()), svc:S.svc, day:S.day, time:S.slot, name:S.name.trim(), phone:S.phone.trim() };
+      const rest = S.bookings.filter(x => x.id !== b.id);
+      this.save([...rest, b].sort((a,c) => (a.day+a.time.padStart(5,'0')).localeCompare(c.day+c.time.padStart(5,'0'))));
+      this.setState({ screen:'done', lastId:b.id });
+    };
+    const next = () => { if (cantContinue) return; if (S.step === 2) this.setState({ step: S.editing ? 3 : 3 }); else confirm(); };
+    const back = () => S.step > 1 ? this.setState({ step:S.step-1 }) : this.setState({ screen: S.editing ? 'citas' : 'home' });
+    const last = S.bookings.find(b => b.id === S.lastId);
+    const lastSvc = last ? svcById(last.svc) : null;
+    const bookingRows = S.bookings.map(b => {
+      const s = svcById(b.svc), d = parse(b.day);
+      return { num:d.getDate(), wd:WDL[d.getDay()], mo:MO[d.getMonth()], time:b.time, svc:s.name, meta:`${dur(s.min)}${showPrices ? ' · ' + s.price + ' €' : ''} · a nombre de ${b.name}`,
+        change: () => this.setState({ screen:'flow', step:2, cat:s.cat, svc:b.svc, day:b.day, slot:null, name:b.name, phone:b.phone, editing:b.id }),
+        cancel: () => this.setState({ cancelId:b.id }) };
+    });
+    const cb = S.bookings.find(b => b.id === S.cancelId);
+    return {
+      isHome: S.screen === 'home', isFlow: S.screen === 'flow', isDone: S.screen === 'done', isCitas: S.screen === 'citas',
+      goHome: () => this.setState({ screen:'home' }), goCitas: () => this.setState({ screen:'citas' }), startFlow: () => start(),
+      hasBookings: S.bookings.length > 0, noBookings: S.bookings.length === 0, bookingCount: S.bookings.length,
+      cats, services, days, slots, progress, back, next, cantContinue,
+      stepNum: `0${S.step}`, stepTitle: titles[S.step-1], summary, hasSummary: summary.length > 0,
+      isStep1: S.step === 1, isStep2Proto: S.step === 2 && !tw, isStep2Tw: S.step === 2 && tw, isStep3: S.step === 3,
+      showContinue: S.step === 3 || (S.step === 2 && !tw),
+      continueLabel: S.step === 3 ? (S.editing ? 'Guardar cambio' : 'Confirmar cita') : 'Continuar',
+      name: S.name, phone: S.phone,
+      onName: e => this.setState({ name:e.target.value }), onPhone: e => this.setState({ phone:e.target.value }),
+      doneName: last ? last.name.split(' ')[0] : '',
+      doneFacts: last ? [{ k:'CUÁNDO', v:`${this.fmtDay(last.day,true)} · ${last.time}` }, { k:'SERVICIO', v:lastSvc.name }, { k:'DÓNDE', v:'José Franchy Roca, 35' }] : [],
+      icsHref: this.ics(last),
+      bookingRows,
+      showDialog: !!cb, dialogText: cb ? `${svcById(cb.svc).name}, ${this.fmtDay(cb.day,true)} a las ${cb.time}.` : '',
+      closeDialog: () => this.setState({ cancelId:null }), stop: e => e.stopPropagation(),
+      confirmCancel: () => { this.save(S.bookings.filter(b => b.id !== S.cancelId)); this.setState({ cancelId:null }); }
+    };
+  }
+}
+</script>
 </body>
 </html>
