@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#f3f2f2">
+<meta name="theme-color" content="#F1ECE2">
 <title>Jesús Plaza Image — Tu estilo, tu momento.</title>
 <meta name="description" content="Barbería, peluquería y masajes en Las Palmas de Gran Canaria. Reserva en tres pasos.">
 <meta name="robots" content="noindex,nofollow">
@@ -15,6 +15,15 @@
 <link rel="stylesheet" href="_ds/modernist-47d6abeb-0034-49cf-a0e6-1d1030d44efe/styles.css">
 <script src="_ds/modernist-47d6abeb-0034-49cf-a0e6-1d1030d44efe/_ds_bundle.js"></script>
 <style>body{margin:0;background:var(--color-bg)}a{color:var(--color-accent-700)}a:hover{color:var(--color-accent)}button{font-family:inherit}
+:root{
+  /* Paleta Jesús Plaza Image: burdeos, plata, negro y blanco ostra */
+  --color-bg:#F1ECE2; --color-surface:#E6E0D4; --color-text:#161314;
+  --color-accent:#6E1822; --color-silver:#C4C4C6;
+  --color-divider:color-mix(in srgb,#161314 35%,transparent);
+  --color-accent-100:#F5E8E6; --color-accent-200:#EACFCC; --color-accent-300:#D9A9A6;
+  --color-accent-500:#8A2330; --color-accent-600:#5C141D; --color-accent-700:#6E1822;
+  --color-neutral-300:#C4C4C6; --color-neutral-400:#A9A7A6; --color-neutral-700:#5E5A57;
+}
 :root{--hdr-h:64px}
 html{-webkit-text-size-adjust:100%}
 body{-webkit-tap-highlight-color:transparent;overflow-x:hidden}
@@ -99,7 +108,7 @@ h1,h2,.jp-cat-label{text-wrap:balance;hyphens:none}
     </div>
     <figure class="jp-hero-fig" style="margin:0;position:relative;min-height:clamp(340px,70vw,640px);background:var(--color-surface);display:flex;flex-direction:column">
       <div class="grayscale" style="flex:1;position:relative"><img src="assets/corte.jpg" alt="Jesús peinando a una clienta en su salón" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
-      <figcaption class="jp-cap" style="margin:0;display:flex;justify-content:space-between;gap:12px;padding:12px clamp(16px,2vw,24px);background:var(--color-text);color:var(--color-bg);font-size:12px;letter-spacing:0.1em;font-weight:600"><span>EL DETALLE CAMBIA TODO</span><span>LAS PALMAS DE G.C.</span></figcaption>
+      <figcaption class="jp-cap" style="margin:0;display:flex;justify-content:space-between;gap:12px;padding:12px clamp(16px,2vw,24px);background:var(--color-text);color:var(--color-silver);font-size:12px;letter-spacing:0.1em;font-weight:600"><span>EL DETALLE CAMBIA TODO</span><span>LAS PALMAS DE G.C.</span></figcaption>
     </figure>
   </section>
 
@@ -120,7 +129,7 @@ h1,h2,.jp-cat-label{text-wrap:balance;hyphens:none}
       <img src="assets/salon.jpg" alt="Sillón y zona de trabajo del salón" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block">
     </figure>
     <div class="jp-visit" style="background:var(--color-accent);color:var(--color-bg);display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-8);padding:clamp(24px,5vw,64px) clamp(16px,4vw,48px)">
-      <div style="font-size:12px;letter-spacing:0.12em;font-weight:600">TE ESPERAMOS</div>
+      <div style="font-size:12px;letter-spacing:0.12em;font-weight:600;color:var(--color-silver)">TE ESPERAMOS</div>
       <div class="jp-addr" style="font-size:clamp(36px,4.4vw,64px);font-weight:800;line-height:0.95;letter-spacing:-0.035em">C. José Franchy Roca,&nbsp;35<br>Las&nbsp;Palmas</div>
       <div style="display:flex;flex-wrap:wrap;gap:var(--space-6);font-size:16px;font-weight:600">
         <a href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Jos%C3%A9+Franchy+Roca+35+35007+Las+Palmas+de+Gran+Canaria" target="_blank" rel="noopener" style="color:var(--color-bg)">Cómo llegar ↗</a>
@@ -221,12 +230,12 @@ h1,h2,.jp-cat-label{text-wrap:balance;hyphens:none}
 
 <sc-if value="{{ isDone }}" hint-placeholder-val="{{ false }}">
   <section class="jp-full jp-done" data-screen-label="05 Confirmada" style="min-height:calc(100vh - 70px);background:var(--color-accent);color:var(--color-bg);display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-8);padding:clamp(24px,5vw,64px) clamp(16px,4vw,48px)">
-    <div style="font-size:12px;letter-spacing:0.12em;font-weight:600">CITA CONFIRMADA</div>
+    <div style="font-size:12px;letter-spacing:0.12em;font-weight:600;color:var(--color-silver)">CITA CONFIRMADA</div>
     <div style="container-type:inline-size;display:flex;flex-direction:column;gap:var(--space-6)">
       <h1 class="jp-done-h jp-fit" style="margin:0;font-size:calc(clamp(34px,14cqi,152px) * var(--fit, 1));line-height:0.88;letter-spacing:-0.045em"><span class="jp-line">Listo, {{ doneName }}.</span><span class="jp-line">Te esperamos.</span></h1>
-      <div class="jp-done-facts" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));border-top:2px solid var(--color-bg)">
+      <div class="jp-done-facts" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));border-top:2px solid var(--color-silver)">
         <sc-for list="{{ doneFacts }}" as="f" hint-placeholder-count="3">
-          <div style="display:flex;flex-direction:column;gap:4px;padding:16px 16px 0 0"><span style="font-size:12px;letter-spacing:0.1em;font-weight:600">{{ f.k }}</span><span style="font-size:clamp(20px,2vw,28px);font-weight:800;letter-spacing:-0.02em">{{ f.v }}</span></div>
+          <div style="display:flex;flex-direction:column;gap:4px;padding:16px 16px 0 0"><span style="font-size:12px;letter-spacing:0.1em;font-weight:600;color:var(--color-silver)">{{ f.k }}</span><span style="font-size:clamp(20px,2vw,28px);font-weight:800;letter-spacing:-0.02em">{{ f.v }}</span></div>
         </sc-for>
       </div>
     </div>
