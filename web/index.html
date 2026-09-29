@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#f3f2f2">
-<title>Jesús Plaza Image — Tu estilo. Tu momento.</title>
+<title>Jesús Plaza Image — Tu estilo, tu momento.</title>
 <meta name="description" content="Barbería, peluquería y masajes en Las Palmas de Gran Canaria. Reserva en tres pasos.">
 <meta name="robots" content="noindex,nofollow">
 <script src="./support.js"></script>
@@ -21,7 +21,12 @@ body{-webkit-tap-highlight-color:transparent;overflow-x:hidden}
 .jp-hdr{min-height:var(--hdr-h);box-sizing:border-box}
 .jp-steps{top:var(--hdr-h) !important}
 .jp-full{min-height:calc(100svh - var(--hdr-h)) !important}
-.jp-done-h{overflow-wrap:anywhere}
+.jp-done-h{overflow-wrap:break-word}
+.jp-cap{flex-wrap:wrap}
+.jp-cap > span{white-space:nowrap}
+h1,h2,.jp-cat-label{text-wrap:balance;hyphens:none}
+.jp-addr{hyphens:none}
+.jp-line{display:block;white-space:nowrap}
 @media (max-width:640px){
   :root{--hdr-h:56px !important}
   .jp-hdr{padding:8px 16px !important;gap:14px !important}
@@ -56,7 +61,6 @@ body{-webkit-tap-highlight-color:transparent;overflow-x:hidden}
   .jp-cta{position:sticky !important;bottom:0 !important;z-index:5 !important;margin:auto -16px 0 !important;width:calc(100% + 32px) !important;max-width:none !important;padding:16px !important;padding-bottom:calc(16px + env(safe-area-inset-bottom)) !important;background:var(--color-bg) !important}
   .jp-cta > .btn{width:100% !important}
   .jp-done{gap:24px !important;padding:28px 16px calc(28px + env(safe-area-inset-bottom)) !important}
-  .jp-done-h{font-size:clamp(44px,14vw,64px) !important}
   .jp-done-facts > div{padding:12px 0 0 !important}
   .jp-actions > *{flex:1 1 100% !important;min-width:0 !important}
   .jp-booking-actions > *{flex:1 !important}
@@ -86,7 +90,7 @@ body{-webkit-tap-highlight-color:transparent;overflow-x:hidden}
   <section data-screen-label="01 Portada" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,440px),1fr));gap:2px;background:var(--color-text);border-bottom:2px solid var(--color-text)">
     <div class="jp-hero" style="container-type:inline-size;min-width:0;background:var(--color-bg);display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-8);padding:clamp(24px,5vw,64px) clamp(16px,4vw,48px)">
       <div style="font-size:12px;letter-spacing:0.12em;font-weight:600">BARBERÍA · PELUQUERÍA · MASAJES</div>
-      <h1 style="margin:0;font-size:clamp(48px,17cqi,152px);line-height:0.88;letter-spacing:-0.045em;font-weight:800">Tu estilo.<br><span style="color:var(--color-accent)">Tu momento.</span></h1>
+      <h1 style="margin:0;font-size:clamp(34px,16cqi,150px);line-height:0.9;letter-spacing:-0.045em;font-weight:800"><span class="jp-line">Tu estilo,</span><span class="jp-line" style="color:var(--color-accent)">tu momento.</span></h1>
       <div style="display:flex;flex-direction:column;gap:var(--space-4);max-width:420px">
         <p style="margin:0;font-size:clamp(17px,2vw,20px);line-height:1.4;text-wrap:pretty">Un corte que habla de ti, o una pausa que te sienta bien.</p>
         <button class="btn btn-primary" onClick="{{ startFlow }}" style="justify-content:space-between;padding:18px 20px;font-size:17px;width:100%">Reservar cita<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"><path d="M5 12h14"></path><path d="m13 5 7 7-7 7"></path></svg></button>
@@ -95,7 +99,7 @@ body{-webkit-tap-highlight-color:transparent;overflow-x:hidden}
     </div>
     <figure class="jp-hero-fig" style="margin:0;position:relative;min-height:clamp(340px,70vw,640px);background:var(--color-surface);display:flex;flex-direction:column">
       <div class="grayscale" style="flex:1;position:relative"><img src="assets/corte.jpg" alt="Jesús peinando a una clienta en su salón" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block"></div>
-      <figcaption style="margin:0;display:flex;justify-content:space-between;gap:12px;padding:12px clamp(16px,2vw,24px);background:var(--color-text);color:var(--color-bg);font-size:12px;letter-spacing:0.1em;font-weight:600"><span>EL DETALLE CAMBIA TODO</span><span>LAS PALMAS DE G.C.</span></figcaption>
+      <figcaption class="jp-cap" style="margin:0;display:flex;justify-content:space-between;gap:12px;padding:12px clamp(16px,2vw,24px);background:var(--color-text);color:var(--color-bg);font-size:12px;letter-spacing:0.1em;font-weight:600"><span>EL DETALLE CAMBIA TODO</span><span>LAS PALMAS DE G.C.</span></figcaption>
     </figure>
   </section>
 
@@ -117,7 +121,7 @@ body{-webkit-tap-highlight-color:transparent;overflow-x:hidden}
     </figure>
     <div class="jp-visit" style="background:var(--color-accent);color:var(--color-bg);display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-8);padding:clamp(24px,5vw,64px) clamp(16px,4vw,48px)">
       <div style="font-size:12px;letter-spacing:0.12em;font-weight:600">TE ESPERAMOS</div>
-      <div class="jp-addr" style="font-size:clamp(36px,4.4vw,64px);font-weight:800;line-height:0.95;letter-spacing:-0.035em">C. José Franchy Roca, 35<br>Las Palmas</div>
+      <div class="jp-addr" style="font-size:clamp(36px,4.4vw,64px);font-weight:800;line-height:0.95;letter-spacing:-0.035em">C. José Franchy Roca,&nbsp;35<br>Las&nbsp;Palmas</div>
       <div style="display:flex;flex-wrap:wrap;gap:var(--space-6);font-size:16px;font-weight:600">
         <a href="https://www.google.com/maps/search/?api=1&amp;query=Calle+Jos%C3%A9+Franchy+Roca+35+35007+Las+Palmas+de+Gran+Canaria" target="_blank" rel="noopener" style="color:var(--color-bg)">Cómo llegar ↗</a>
         <a href="https://www.instagram.com/jesusplazaimage/" target="_blank" rel="noopener" style="color:var(--color-bg)">@jesusplazaimage ↗</a>
@@ -218,8 +222,8 @@ body{-webkit-tap-highlight-color:transparent;overflow-x:hidden}
 <sc-if value="{{ isDone }}" hint-placeholder-val="{{ false }}">
   <section class="jp-full jp-done" data-screen-label="05 Confirmada" style="min-height:calc(100vh - 70px);background:var(--color-accent);color:var(--color-bg);display:flex;flex-direction:column;justify-content:space-between;gap:var(--space-8);padding:clamp(24px,5vw,64px) clamp(16px,4vw,48px)">
     <div style="font-size:12px;letter-spacing:0.12em;font-weight:600">CITA CONFIRMADA</div>
-    <div style="display:flex;flex-direction:column;gap:var(--space-6)">
-      <h1 class="jp-done-h" style="margin:0;font-size:clamp(64px,10vw,152px);line-height:0.88;letter-spacing:-0.045em">Listo, {{ doneName }}.<br>Te esperamos.</h1>
+    <div style="container-type:inline-size;display:flex;flex-direction:column;gap:var(--space-6)">
+      <h1 class="jp-done-h jp-fit" style="margin:0;font-size:calc(clamp(34px,14cqi,152px) * var(--fit, 1));line-height:0.88;letter-spacing:-0.045em"><span class="jp-line">Listo, {{ doneName }}.</span><span class="jp-line">Te esperamos.</span></h1>
       <div class="jp-done-facts" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));border-top:2px solid var(--color-bg)">
         <sc-for list="{{ doneFacts }}" as="f" hint-placeholder-count="3">
           <div style="display:flex;flex-direction:column;gap:4px;padding:16px 16px 0 0"><span style="font-size:12px;letter-spacing:0.1em;font-weight:600">{{ f.k }}</span><span style="font-size:clamp(20px,2vw,28px);font-weight:800;letter-spacing:-0.02em">{{ f.v }}</span></div>
@@ -291,13 +295,26 @@ const svcById = id => { const [c,i] = id.split(':'); const s = SERVICES[c][+i]; 
 class Component extends DCLogic {
   state = { screen:'home', step:1, cat:'barberia', svc:null, day:null, slot:null, name:'', phone:'', bookings:[], editing:null, cancelId:null };
   componentDidMount() {
+    this._onResize = () => this.fit();
+    window.addEventListener('resize', this._onResize);
+    try { document.fonts.ready.then(this._onResize); } catch (e) {}
     try { this.setState({ bookings: JSON.parse(localStorage.getItem(KEY) || '[]') }); } catch (e) {}
   }
+  // Encoge los titulares .jp-fit lo justo para que cada .jp-line quepa en una sola línea.
+  fit() {
+    document.querySelectorAll('.jp-fit').forEach(h => {
+      h.style.setProperty('--fit', 1);
+      const widest = Math.max(...[...h.querySelectorAll('.jp-line')].map(l => { const r = document.createRange(); r.selectNodeContents(l); return r.getBoundingClientRect().width; }));
+      if (widest > h.clientWidth) h.style.setProperty('--fit', (h.clientWidth / widest * 0.98).toFixed(4));
+    });
+  }
   componentDidUpdate() {
+    this.fit();
     const k = this.state.screen + ':' + this.state.step;
     if (this._view && this._view !== k) { try { window.scrollTo(0, 0); } catch (e) {} }
     this._view = k;
   }
+  componentWillUnmount() { window.removeEventListener('resize', this._onResize); }
   save(bookings) { this.setState({ bookings }); try { localStorage.setItem(KEY, JSON.stringify(bookings)); } catch (e) {} }
   days() {
     const out = []; const d = new Date(); d.setHours(0,0,0,0);
@@ -350,7 +367,7 @@ class Component extends DCLogic {
     });
     const labels = ['Servicio','Día y hora','Tus datos'];
     const progress = labels.map((label,i) => ({ label, n:`0${i+1}`, bar: i+1 <= S.step ? 'var(--color-accent)' : 'var(--color-neutral-300)', op: i+1 <= S.step ? 1 : 0.5 }));
-    const titles = ['¿Qué te apetece hoy?', '¿Cuándo te viene bien?', '¿A nombre de quién?'];
+    const titles = ['¿Qué te apetece\u00a0hoy?', '¿Cuándo te\u00a0viene bien?', '¿A nombre de\u00a0quién?'];
     const summary = [];
     if (svc && S.step > 1) summary.push({ k:'Servicio', v:`${svc.name}${showPrices ? ' · ' + svc.price + ' €' : ''}` }, { k:'Duración', v:dur(svc.min) });
     if (S.day && S.slot && S.step > 2) summary.push({ k:'Cuándo', v:`${this.fmtDay(S.day,true)} · ${S.slot}` });
